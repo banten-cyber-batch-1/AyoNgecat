@@ -1,0 +1,16 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    name:
+        label: Nama
+        searchable: true
+
+    email:
+        label: Email
+        searchable: true
+
+    created_at:
+        label: Tanggal Masuk
+        searchable: true

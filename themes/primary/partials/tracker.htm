@@ -1,0 +1,23 @@
+[googleTracker]
+
+==
+
+{% component 'googleTracker' %}
+<script src="https://wchat.freshchat.com/js/widget.js"></script>
+<script>
+	{% if user %}
+	// GA User Identification
+	ga('set', 'userId', '{{ user.email }}');
+
+	// Zopim User Identification
+	// $zopim(function() {
+	//     $zopim.livechat.setName('{{ user.name }}');
+	//     $zopim.livechat.setEmail('{{ user.email }}');
+	// });
+	{% endif %}
+
+	window.fcWidget.init({
+		token: "aa50defa-beaa-4ffd-b250-8c9623df1ae2",
+		host: "https://wchat.freshchat.com"
+	});
+</script>
