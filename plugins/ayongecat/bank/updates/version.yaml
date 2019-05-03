@@ -1,0 +1,5 @@
+1.0.1: First version of Bank
+1.0.2:
+    - init bank base table
+    - create_banks_table.php
+    - create_types_table.php
