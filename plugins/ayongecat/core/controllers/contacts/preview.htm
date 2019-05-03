@@ -1,0 +1,32 @@
+<!-- Primary content -->
+<?php Block::put('form-contents') ?>
+	<?php Block::put('breadcrumb') ?>
+	    <ul>
+	        <li><a href="<?= Backend::url('ayongecat/core/contacts') ?>">Contacts</a></li>
+	        <li><?= e($this->pageTitle) ?></li>
+	    </ul>
+	<?php Block::endPut() ?>
+
+	<?php if (!$this->fatalError): ?>
+	    <div class="form-preview">
+	        <?= $this->formRenderPreview() ?>
+	    </div>
+	<?php else: ?>
+	    <p class="flash-message static error"><?= e($this->fatalError) ?></p>
+	    <p><a href="<?= Backend::url('ayongecat/core/contacts') ?>" class="btn btn-default">Return to contacts list</a></p>
+	<?php endif ?>
+<?php Block::endPut() ?>
+
+<!-- Complimentary sidebar -->
+<?php Block::put('form-sidebar') ?>
+    <div class="hide-tabs">
+        <?= $this->formRenderSecondaryTabs() ?>
+    </div>
+<?php Block::endPut() ?>
+
+<!-- Layout execution -->
+<?php Block::put('body') ?>
+    <?= Form::open(['class'=>'layout stretch']) ?>
+        <?= $this->makeLayout('form-with-sidebar') ?>
+    <?= Form::close() ?>
+<?php Block::endPut() ?>

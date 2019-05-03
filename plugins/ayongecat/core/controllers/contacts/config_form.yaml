@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Contact
+
+# Model Form Field configuration
+form: $/ayongecat/contact/models/contact/fields.yaml
+
+# Model Class name
+modelClass: Ayongecat\Contact\Models\Contact
+
+# Default redirect location
+defaultRedirect: ayongecat/core/contacts
+
+# Create page
+create:
+    title: Create Contact
+    redirect: ayongecat/core/contacts/update/:id
+    redirectClose: ayongecat/core/contacts
+
+# Update page
+update:
+    title: Edit Contact
+    redirect: ayongecat/core/contacts
+    redirectClose: ayongecat/core/contacts
+
+# Preview page
+preview:
+    title: Preview Contact

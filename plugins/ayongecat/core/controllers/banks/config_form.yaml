@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Bank
+
+# Model Form Field configuration
+form: $/ayongecat/bank/models/bank/fields.yaml
+
+# Model Class name
+modelClass: Ayongecat\Bank\Models\Bank
+
+# Default redirect location
+defaultRedirect: ayongecat/core/banks
+
+# Create page
+create:
+    title: Create Bank
+    redirect: ayongecat/core/banks/update/:id
+    redirectClose: ayongecat/core/banks
+
+# Update page
+update:
+    title: Edit Bank
+    redirect: ayongecat/core/banks
+    redirectClose: ayongecat/core/banks
+
+# Preview page
+preview:
+    title: Preview Bank
