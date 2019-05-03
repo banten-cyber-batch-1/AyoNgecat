@@ -45,7 +45,7 @@ return [
 
         'local' => [
             'driver' => 'local',
-            'root'   => 'https://bc-admin.app/storage/upload',
+            'root'   => storage_path('app')
         ],
 
         's3' => [
