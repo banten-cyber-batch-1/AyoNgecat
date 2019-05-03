@@ -3,6 +3,12 @@
 # ===================================
 
 columns:
-    id:
-        label: ID
-        searchable: true
+  name:
+    label: Nama
+    searchable: true
+  number:
+    label: Rekening
+    searchable: true
+  created_at:
+    label: Tanggal Dibuat
+    searchable: true

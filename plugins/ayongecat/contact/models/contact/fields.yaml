@@ -3,6 +3,21 @@
 # ===================================
 
 fields:
-    id:
-        label: ID
-        disabled: true
+  name:
+    label: Nama
+  phone:
+    label: No. Telepon
+  email:
+    label: Alamat Email
+  subject:
+    label: Perihal
+  body:
+    label: Pesan
+    type: textarea
+    size: medium
+
+secondaryTabs:
+  fields:
+    attachments:
+      label: File
+      type: fileupload

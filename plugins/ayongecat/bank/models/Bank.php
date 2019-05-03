@@ -10,15 +10,15 @@ class Bank extends Model
     use \October\Rain\Database\Traits\Validation;
 
     public $rules = [
-        'type_id' => 'required',
-        'name'    => 'required',
-        'number'  => 'required|numeric',
+        'type'   => 'required',
+        'name'   => 'required',
+        'number' => 'required|numeric',
     ];
 
     public $attributeNames = [
-        'type_id' => 'jenis bank',
-        'name'    => 'nama pemilik',
-        'number'  => 'nomor rekening',
+        'type'   => 'jenis bank',
+        'name'   => 'nama pemilik',
+        'number' => 'nomor rekening',
     ];
 
     /**
@@ -44,8 +44,8 @@ class Bank extends Model
     public $belongsTo     = [
         'type' => [
             'Ayongecat\Bank\Models\Type',
-            'key'      => 'id',
-            'otherKey' => 'type_id'
+            'key'      => 'type_id',
+            'otherKey' => 'id'
         ]
     ];
     public $belongsToMany = [];

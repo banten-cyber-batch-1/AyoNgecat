@@ -3,6 +3,11 @@
 # ===================================
 
 fields:
-    id:
-        label: ID
-        disabled: true
+  type:
+    label: Jenis Bank
+    type: relation
+    emptyOption: -- Pilih --
+  name:
+    label: Nama Pemilik
+  number:
+    label: Nomor Rekening

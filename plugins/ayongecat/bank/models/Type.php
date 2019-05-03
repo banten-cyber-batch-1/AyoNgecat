@@ -44,6 +44,8 @@ class Type extends Model
     public $morphTo       = [];
     public $morphOne      = [];
     public $morphMany     = [];
-    public $attachOne     = [];
+    public $attachOne     = [
+        'picture' => ['System\Models\File']
+    ];
     public $attachMany    = [];
 }

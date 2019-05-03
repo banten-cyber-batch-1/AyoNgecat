@@ -3,6 +3,9 @@
 # ===================================
 
 columns:
-    id:
-        label: ID
-        searchable: true
+  name:
+    label: Nama
+    searchable: true
+  short:
+    label: Singakatan
+    searchable: true

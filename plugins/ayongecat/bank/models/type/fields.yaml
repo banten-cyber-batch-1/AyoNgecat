@@ -3,6 +3,13 @@
 # ===================================
 
 fields:
-    id:
-        label: ID
-        disabled: true
+  name:
+    label: Nama
+  short:
+    label: Singkatan
+
+secondaryTabs:
+  fields:
+    picture:
+      label: Gambar Utama
+      type: fileupload

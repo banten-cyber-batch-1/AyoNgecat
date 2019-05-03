@@ -3,6 +3,16 @@
 # ===================================
 
 columns:
-    id:
-        label: ID
-        searchable: true
+  name:
+    label: Nama
+    searchable: true
+  phone:
+    label: Telepon
+    searchable: true
+  email:
+    label: Alamat Email
+    searchable: true
+  created_at:
+    label: Tanggal Dibuat
+    searchable: true
+
