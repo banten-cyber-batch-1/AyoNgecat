@@ -1,0 +1,11 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    name:
+        label: Nama
+        searchable: true
+    created_at:
+        label: Dibuat pada
+        searchable: true

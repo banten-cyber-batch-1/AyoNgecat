@@ -1,0 +1,16 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: Nama
+    content:
+        label: Konten
+        type: richeditor
+
+secondaryTabs:
+    fields:
+        picture:
+            label: Gambar Utama
+            type: fileupload
