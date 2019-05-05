@@ -100,6 +100,14 @@ class Plugin extends PluginBase
                         'order'       => 500,
                     ],
 
+                    'programs' => [
+                        'label'       => 'Program',
+                        'url'         => Backend::url('ayongecat/core/programs'),
+                        'icon'        => 'icon-star',
+                        'permissions' => ['ayongecat.core.*'],
+                        'order'       => 500,
+                    ],
+
                     'contacts' => [
                         'label'       => 'Pesan Masuk',
                         'url'         => Backend::url('ayongecat/core/contacts'),
