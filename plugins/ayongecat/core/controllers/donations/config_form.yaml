@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Donation
+
+# Model Form Field configuration
+form: $/ayongecat/donation/models/donation/fields.yaml
+
+# Model Class name
+modelClass: Ayongecat\Donation\Models\Donation
+
+# Default redirect location
+defaultRedirect: ayongecat/core/donations
+
+# Create page
+create:
+    title: Create Donation
+    redirect: ayongecat/core/donations/update/:id
+    redirectClose: ayongecat/core/donations
+
+# Update page
+update:
+    title: Edit Donation
+    redirect: ayongecat/core/donations
+    redirectClose: ayongecat/core/donations
+
+# Preview page
+preview:
+    title: Preview Donation

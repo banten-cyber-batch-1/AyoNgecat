@@ -100,6 +100,14 @@ class Plugin extends PluginBase
                         'order'       => 500,
                     ],
 
+                    'donations' => [
+                        'label'       => 'Donasi',
+                        'url'         => Backend::url('ayongecat/core/donations'),
+                        'icon'        => 'icon-money',
+                        'permissions' => ['ayongecat.core.*'],
+                        'order'       => 500,
+                    ],
+
                     'programs' => [
                         'label'       => 'Program',
                         'url'         => Backend::url('ayongecat/core/programs'),
