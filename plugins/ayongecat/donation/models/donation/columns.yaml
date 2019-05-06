@@ -1,0 +1,21 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    program_id:
+        label: Program
+        relation: program
+        select: name
+        searchable: true
+    bank_id:
+        label: Rekening
+        relation: bank
+        select: name
+        searchable: true
+    value:
+        label: Donasi
+        searchable: true
+    donationed_at:
+        label: Tanggal Donasi
+        searchable: true

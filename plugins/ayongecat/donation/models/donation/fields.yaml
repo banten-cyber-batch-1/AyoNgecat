@@ -1,0 +1,28 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    program:
+        label: Program
+        type: relation
+    bank:
+        label: Rekening
+        type: relation
+
+    name:
+        label: Nama
+    phone:
+        label: Telepon
+    email:
+        label: Alamat Email
+    value:
+        label: Donasi
+    message:
+        label: Pesan
+
+secondaryTabs:
+    fields:
+        attachment:
+            label: Bukti Transfer
+            type: fileupload
