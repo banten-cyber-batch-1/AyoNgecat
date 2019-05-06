@@ -20,6 +20,8 @@ fields:
         label: Donasi
     message:
         label: Pesan
+        type: textarea
+        size: medium
 
 secondaryTabs:
     fields:
