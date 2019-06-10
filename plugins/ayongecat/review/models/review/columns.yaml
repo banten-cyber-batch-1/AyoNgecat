@@ -6,6 +6,7 @@ columns:
     project_id:
       label: Project
       relation: project
+      select: name
       searchable: true
     name:
       label: Nama
