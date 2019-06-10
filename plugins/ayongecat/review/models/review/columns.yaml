@@ -3,16 +3,12 @@
 # ===================================
 
 columns:
-    program_id:
-      label: Program
-      relation: program
-      select: name
+    project_id:
+      label: Project
+      relation: project
       searchable: true
     name:
       label: Nama
-      searchable: true
-    location:
-      label: Location
       searchable: true
     created_at:
       label: Dibuat pada

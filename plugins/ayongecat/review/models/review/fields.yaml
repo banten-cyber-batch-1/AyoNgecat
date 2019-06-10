@@ -1,0 +1,22 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    project:
+      label: Project
+      type: relation
+      emptyOption: -- Pilih --
+    name:
+      label: Nama
+    role:
+      label: Role
+    content:
+      label: Konten
+      type: richeditor
+
+secondaryTabs:
+  fields:
+    picture:
+      label: Gambar Utama
+      type: fileupload

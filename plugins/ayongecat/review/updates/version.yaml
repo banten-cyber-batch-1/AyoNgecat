@@ -1,0 +1,4 @@
+1.0.1: First version of Review
+1.0.2:
+    - init review base table
+    - create_reviews_table.php

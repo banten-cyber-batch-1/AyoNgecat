@@ -109,6 +109,14 @@ class Plugin extends PluginBase
                         'order'       => 501,
                     ],
 
+                    'reviews' => [
+                        'label'       => 'Komentar',
+                        'url'         => Backend::url('ayongecat/core/reviews'),
+                        'icon'        => 'icon-comments',
+                        'permissions' => ['ayongecat.core.*'],
+                        'order'       => 501,
+                    ],
+
                     'donations' => [
                         'label'       => 'Donasi',
                         'url'         => Backend::url('ayongecat/core/donations'),
