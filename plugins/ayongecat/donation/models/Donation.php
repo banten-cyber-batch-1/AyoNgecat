@@ -11,17 +11,23 @@ class Donation extends Model
     use \October\Rain\Database\Traits\Validation;
 
     public $rules = [
-        'name'  => 'required',
-        'phone' => 'required',
-        'email' => 'required|email',
-        'value' => 'required|numeric',
+        'program'       => 'required',
+        'bank'          => 'required',
+        'donationed_at' => 'required',
+        'name'          => 'required',
+        'phone'         => 'required',
+        'email'         => 'required|email',
+        'value'         => 'required|numeric',
     ];
 
     public $attributeNames = [
-        'name'  => 'nama',
-        'phone' => 'telepon',
-        'email' => 'email',
-        'value' => 'donasi',
+        'program'       => 'program',
+        'bank'          => 'rekening',
+        'donationed_at' => 'tanggal donasi',
+        'name'          => 'nama',
+        'phone'         => 'telepon',
+        'email'         => 'email',
+        'value'         => 'donasi',
     ];
 
     /**
