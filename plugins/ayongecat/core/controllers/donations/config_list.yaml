@@ -12,7 +12,7 @@ modelClass: Ayongecat\Donation\Models\Donation
 title: Manage Donations
 
 # Link URL for each record
-recordUrl: ayongecat/core/donations/preview/:id
+recordUrl: ayongecat/core/donations/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records
