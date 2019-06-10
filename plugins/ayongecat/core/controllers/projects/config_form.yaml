@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Project
+
+# Model Form Field configuration
+form: $/ayongecat/project/models/project/fields.yaml
+
+# Model Class name
+modelClass: Ayongecat\Project\Models\Project
+
+# Default redirect location
+defaultRedirect: ayongecat/core/projects
+
+# Create page
+create:
+    title: Create Project
+    redirect: ayongecat/core/projects/update/:id
+    redirectClose: ayongecat/core/projects
+
+# Update page
+update:
+    title: Edit Project
+    redirect: ayongecat/core/projects
+    redirectClose: ayongecat/core/projects
+
+# Preview page
+preview:
+    title: Preview Project

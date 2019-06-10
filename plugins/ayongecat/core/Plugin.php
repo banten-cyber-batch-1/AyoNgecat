@@ -92,18 +92,10 @@ class Plugin extends PluginBase
                 'order'       => 500,
 
                 'sideMenu' => [
-                    'banks' => [
-                        'label'       => 'Rekening',
-                        'url'         => Backend::url('ayongecat/core/banks'),
-                        'icon'        => 'icon-bank',
-                        'permissions' => ['ayongecat.core.*'],
-                        'order'       => 500,
-                    ],
-
-                    'donations' => [
-                        'label'       => 'Donasi',
-                        'url'         => Backend::url('ayongecat/core/donations'),
-                        'icon'        => 'icon-money',
+                    'projects' => [
+                        'label'       => 'Project',
+                        'url'         => Backend::url('ayongecat/core/projects'),
+                        'icon'        => 'icon-list',
                         'permissions' => ['ayongecat.core.*'],
                         'order'       => 500,
                     ],
@@ -111,17 +103,33 @@ class Plugin extends PluginBase
                     'programs' => [
                         'label'       => 'Program',
                         'url'         => Backend::url('ayongecat/core/programs'),
-                        'icon'        => 'icon-star',
+                        'icon'        => 'icon-briefcase',
                         'permissions' => ['ayongecat.core.*'],
-                        'order'       => 500,
+                        'order'       => 501,
+                    ],
+
+                    'donations' => [
+                        'label'       => 'Donasi',
+                        'url'         => Backend::url('ayongecat/core/donations'),
+                        'icon'        => 'icon-money',
+                        'permissions' => ['ayongecat.core.*'],
+                        'order'       => 501,
+                    ],
+
+                    'banks' => [
+                        'label'       => 'Rekening',
+                        'url'         => Backend::url('ayongecat/core/banks'),
+                        'icon'        => 'icon-bank',
+                        'permissions' => ['ayongecat.core.*'],
+                        'order'       => 502,
                     ],
 
                     'contacts' => [
-                        'label'       => 'Pesan Masuk',
+                        'label'       => 'Pesan',
                         'url'         => Backend::url('ayongecat/core/contacts'),
                         'icon'        => 'icon-envelope',
                         'permissions' => ['ayongecat.core.*'],
-                        'order'       => 500,
+                        'order'       => 503,
                     ],
                 ]
             ],

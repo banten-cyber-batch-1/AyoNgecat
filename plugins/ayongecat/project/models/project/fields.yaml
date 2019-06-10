@@ -1,0 +1,64 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    program:
+      label: Program
+      type: relation
+      emptyOptions: -- Pilih --
+    name:
+      label: Nama
+    location:
+      label: Lokasi
+    content:
+      label: Konten
+      type: richeditor
+
+tabs:
+  fields:
+    cashflow_in:
+      type: repeater
+      prompt: Buat baris
+      tab: Pemasukan
+      form:
+          fields:
+            name:
+              label: Nama
+              span: left
+            value:
+                label: Nominal
+                span: right
+            date:
+                label: Tanggal
+                type: datepicker
+    cashflow_out:
+      type: repeater
+      prompt: Buat baris
+      tab: Pengeluaran
+      form:
+          fields:
+            name:
+              label: Nama
+              span: left
+            value:
+                label: Nominal
+                span: right
+            date:
+                label: Tanggal
+                type: datepicker
+
+    before:
+      label: Gambar Sebelum
+      type: fileupload
+      tab: Galeri
+    after:
+      label: Gambar Sesudah
+      type: fileupload
+      tab: Galeri
+
+secondaryTabs:
+  fields:
+    picture:
+      label: Gambar Utama
+      type: fileupload

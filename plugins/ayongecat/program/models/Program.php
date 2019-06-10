@@ -45,7 +45,8 @@ class Program extends Model
     public $morphOne      = [];
     public $morphMany     = [];
     public $attachOne     = [
-        'picture' => ['System\Models\File']
+        'picture' => ['System\Models\File'],
+        'brief'   => ['System\Models\File']
     ];
     public $attachMany    = [];
 

@@ -3,6 +3,11 @@
 # ===================================
 
 columns:
+  type_id:
+    label: Jenis Bank
+    relation: type
+    select: name
+    searchable: true
   name:
     label: Nama
     searchable: true

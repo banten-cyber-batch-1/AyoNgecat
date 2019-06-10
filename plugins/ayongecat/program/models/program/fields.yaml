@@ -9,6 +9,12 @@ fields:
         label: Konten
         type: richeditor
 
+tabs:
+  fields:
+    brief:
+      type: mediafinder
+      tab: Proposal
+
 secondaryTabs:
     fields:
         picture:

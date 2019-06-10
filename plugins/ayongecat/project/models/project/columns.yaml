@@ -1,0 +1,19 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    program_id:
+      label: Program
+      relation: program
+      select: name
+      searchable: true
+    name:
+      label: Nama
+      searchable: true
+    location:
+      label: Location
+      searchable: true
+    created_at:
+      label: Tanggal Dibuat
+      searchable: true
