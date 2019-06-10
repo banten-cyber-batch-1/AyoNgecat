@@ -3,7 +3,6 @@
 ==
 
 {% component 'googleTracker' %}
-<script src="https://wchat.freshchat.com/js/widget.js"></script>
 <script>
 	{% if user %}
 	// GA User Identification
@@ -15,9 +14,4 @@
 	//     $zopim.livechat.setEmail('{{ user.email }}');
 	// });
 	{% endif %}
-
-	window.fcWidget.init({
-		token: "aa50defa-beaa-4ffd-b250-8c9623df1ae2",
-		host: "https://wchat.freshchat.com"
-	});
 </script>
