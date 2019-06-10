@@ -10,10 +10,10 @@ fields:
     name:
       label: Nama
     role:
-      label: Role
+      label: Jabatan
     content:
       label: Konten
-      type: richeditor
+      type: textarea
 
 secondaryTabs:
   fields:
