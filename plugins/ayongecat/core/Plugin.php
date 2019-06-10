@@ -87,6 +87,7 @@ class Plugin extends PluginBase
             'core' => [
                 'label'       => 'Ayongecat',
                 'url'         => Backend::url('ayongecat/core/banks'),
+                'iconSvg'     => 'plugins/ayongecat/core/assets/images/paint-roller.svg',
                 'icon'        => 'icon-leaf',
                 'permissions' => ['ayongecat.core.*'],
                 'order'       => 500,
