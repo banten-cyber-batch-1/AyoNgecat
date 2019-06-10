@@ -3,9 +3,63 @@
 //
 @import '_all';
 
+
 //
 // Your app styles
 //
+body {
+	padding-top: 101px;
+}
+
+.text-content {
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.bg-gradient-linear(@color1, @color2) {
+	background-image: -webkit-linear-gradient(left, @color1, @color2);
+	background-image: -o-linear-gradient(left, @color1, @color2);
+	background-image: linear-gradient(to right, @color1, @color2);
+}
+
+.block-sideby {
+	.mg-t-40();
+
+	&:last-child {
+		.mg-b-40();
+	}
+
+	p {
+		.text-content();
+	}
+}
+
+.bg-outter {
+	.pd-20();
+	.bg-gradient-linear(@brand-pink, @brand-gold);
+
+	&.to-left {
+		img {
+			@media(min-width: @screen-tablet) {
+				left: -100px;
+			}
+		}
+	}
+
+	&.to-right {
+		img {
+			@media(min-width: @screen-tablet) {
+				right: -100px;
+			}
+		}
+	}
+
+	img {
+		position: relative;
+		border-radius: 10px;
+	}
+}
+
 .navbar-primary {
 	border-radius: 0px !important;
 
@@ -82,3 +136,6 @@ footer {
 	  }
 	}
 }
+
+
+
