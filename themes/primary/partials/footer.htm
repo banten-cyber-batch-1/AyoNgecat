@@ -1,5 +1,5 @@
-[viewBag]
-
+[staticMenu mainMenu]
+code = "main-menu"
 ==
 <footer>
     <div class="container">
@@ -10,15 +10,16 @@
         <div class="col-sm-4">
             <div class="footer-menu">
                 <h4>MENU UTAMA</h4>
-                <ul>
-                    <li><a href="#"></a></li>
+                <ul class="nav">
+                    {% for item in mainMenu.menuItems %}
+                    <li><a href="#">{{ item.title }}</a></li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="footer-menu">
                 <h4>HUBUNGI KAMI</h4>
-
             </div>
 
             <div class="footer-menu">

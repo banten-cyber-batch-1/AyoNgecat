@@ -14,7 +14,7 @@ items:
             cssClass: ''
             isExternal: '0'
     -
-        title: Proyek
+        title: Profile
         nesting: ''
         type: url
         url: /
@@ -27,7 +27,7 @@ items:
             cssClass: ''
             isExternal: '0'
     -
-        title: Profile
+        title: Program
         nesting: ''
         type: url
         url: '#'
@@ -35,65 +35,8 @@ items:
         reference: ''
         cmsPage: ''
         replace: ''
-        viewBag:
-            isHidden: '0'
-            cssClass: ''
-            isExternal: '0'
-        items:
-            -
-                title: 'Visi & Misi'
-                nesting: ''
-                type: url
-                url: /
-                code: ''
-                reference: ''
-                cmsPage: ''
-                replace: ''
-                viewBag:
-                    isHidden: '0'
-                    cssClass: ''
-                    isExternal: '0'
-            -
-                title: 'Company Value'
-                nesting: ''
-                type: url
-                url: /
-                code: ''
-                reference: ''
-                cmsPage: ''
-                replace: ''
-                viewBag:
-                    isHidden: '0'
-                    cssClass: ''
-                    isExternal: '0'
-            -
-                title: 'Company History'
-                nesting: ''
-                type: url
-                url: /
-                code: ''
-                reference: ''
-                cmsPage: ''
-                replace: ''
-                viewBag:
-                    isHidden: '0'
-                    cssClass: ''
-                    isExternal: '0'
-            -
-                title: Address
-                nesting: ''
-                type: url
-                url: /
-                code: ''
-                reference: ''
-                cmsPage: ''
-                replace: ''
-                viewBag:
-                    isHidden: '0'
-                    cssClass: ''
-                    isExternal: '0'
     -
-        title: Client
+        title: Project
         nesting: ''
         type: url
         url: /
@@ -106,7 +49,7 @@ items:
             cssClass: ''
             isExternal: '0'
     -
-        title: Organisasi
+        title: Donasi
         nesting: ''
         type: url
         url: /
