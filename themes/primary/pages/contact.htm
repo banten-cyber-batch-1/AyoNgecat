@@ -1,0 +1,41 @@
+title     = "Hubungi Kami"
+url       = "/hubungi-kami"
+layout    = "default"
+is_hidden = 0
+
+[Contact]
+==
+
+<div class="container">
+	<form data-request="Contact::onContact" data-request-flash>
+		<div class="form-group">
+			<label for="">Perihal</label>
+			<input type="text" class="form-control" name="subject">
+		</div>
+
+		<div class="form-group">
+			<label for="">Name</label>
+			<input type="text" class="form-control" name="name">
+		</div>
+
+		<div class="form-group">
+			<label for="">Email</label>
+			<input type="email" class="form-control" name="email">
+		</div>
+
+		<div class="form-group">
+			<label for="">No. Telepon</label>
+			<input type="text" class="form-control" name="phone">
+		</div>
+
+		<div class="form-group">
+			<label for="">Pesan</label>
+			<textarea name="body" rows="5" class="form-control"></textarea>
+		</div>
+
+		<div class="form-group">
+			<label>&nbsp;</label>
+			<button class="btn btn-primary btn-block" type="submit" data-attach-loading>SIMPAN</button>
+		</div>
+	</form>
+</div>

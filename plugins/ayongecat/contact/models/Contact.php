@@ -18,7 +18,7 @@ class Contact extends Model
     ];
 
     public $attributeNames = [
-        'subject' => 'subyek',
+        'subject' => 'perihal',
         'name'    => 'nama',
         'phone'   => 'telepon',
         'email'   => 'email',

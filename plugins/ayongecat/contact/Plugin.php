@@ -50,10 +50,10 @@ class Plugin extends PluginBase
      */
     public function registerComponents()
     {
-        return []; // Remove this line to activate
+        // return []; // Remove this line to activate
 
         return [
-            'Ayongecat\Contact\Components\MyComponent' => 'myComponent',
+            'Ayongecat\Contact\Components\Contact' => 'Contact',
         ];
     }
 
