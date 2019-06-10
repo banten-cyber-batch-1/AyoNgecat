@@ -9,6 +9,9 @@ fields:
     bank:
         label: Rekening
         type: relation
+    donationed_at:
+        label: Tanggal
+        type: datepicker
 
     name:
         label: Nama
