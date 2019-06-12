@@ -1,0 +1,30 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+  fields:
+    site_name:
+      label: Nama Website
+      tab: Website
+    site_description:
+      label: Deskripsi Website
+      type: textarea
+      tab: Website
+
+    contact_email:
+      label: Alamat Email
+      tab: Kontak
+    contact_phone:
+      label: Nomor Telepon
+      tab: Kontak
+
+    social_facebook:
+      label: Facebook
+      tab: Media Sosial
+    social_instagram:
+      label: Instagram
+      tab: Media Sosial
+    social_twitter:
+      label: Twitter
+      tab: Media Sosial

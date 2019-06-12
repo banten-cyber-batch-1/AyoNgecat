@@ -1,0 +1,9 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+  banner:
+    label: Gambar Slider
+    type: fileupload
+    tab: Slider

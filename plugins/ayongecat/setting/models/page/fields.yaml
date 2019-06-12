@@ -1,0 +1,20 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+  fields:
+    abouts:
+      tab: Halaman Utama
+      type: repeater
+      form:
+        fields:
+          heading:
+            label: Judul
+          description:
+            label: Details
+            type: textarea
+            size: small
+          content:
+            label: Konten
+            type: richeditor
