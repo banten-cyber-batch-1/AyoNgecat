@@ -22,6 +22,16 @@ class Contact extends ComponentBase
         return [];
     }
 
+    public function init()
+    {
+        $component = $this->addComponent(
+            'Responsiv\Uploader\Components\FileUploader',
+            'attachmentUploader',
+            ['deferredBinding' => false]
+        );
+        $component->bindModel('attachments', new ContactModels);
+    }
+
     public function onContact()
     {
         $contact          = new ContactModels;

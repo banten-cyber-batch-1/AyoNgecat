@@ -2,74 +2,54 @@ name: 'Main Menu'
 items:
     -
         title: Home
-        nesting: ''
         type: cms-page
-        url: ''
         code: ''
         reference: home
-        cmsPage: ''
-        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: Profile
-        nesting: ''
-        type: url
-        url: /
+        type: cms-page
         code: ''
-        reference: ''
-        cmsPage: ''
-        replace: ''
+        reference: profile
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: Program
-        nesting: ''
-        type: url
-        url: '#'
+        type: cms-page
         code: ''
-        reference: ''
-        cmsPage: ''
-        replace: ''
+        reference: program/index
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
     -
         title: Project
-        nesting: ''
-        type: url
-        url: /
+        type: cms-page
         code: ''
-        reference: ''
-        cmsPage: ''
-        replace: ''
+        reference: project/index
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: Donasi
-        nesting: ''
-        type: url
-        url: /
+        type: cms-page
         code: ''
-        reference: ''
-        cmsPage: ''
-        replace: ''
+        reference: donation/index
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: Kontak
-        nesting: ''
         type: cms-page
-        url: ''
         code: ''
         reference: contact
-        cmsPage: ''
-        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''
