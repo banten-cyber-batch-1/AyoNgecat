@@ -9,6 +9,9 @@ tabs:
       type: repeater
       form:
         fields:
+          image:
+            label: Gambar
+            type: mediafinder
           heading:
             label: Judul
           description:

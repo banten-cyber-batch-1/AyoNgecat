@@ -28,7 +28,7 @@ function onStart() {
 	</div>
 </div>
 
-{% for i in 1..4 %}
+{% for i, k in settings.page.abouts %}
 	{% if i%2 == 0 %}
 		<div class="block block-explain explain-left">
 			<div class="container">
@@ -36,7 +36,7 @@ function onStart() {
 					<div class="col-md-5 col-md-push-7">
 						<div class="explain-image">
 							<div class="bg-outter">
-								<img src="http://unsplash.it/600/600" alt="" class="img-responsive">
+								<img src="{{ k.image }}" alt="" class="img-responsive">
 							</div>
 						</div>
 					</div>
@@ -45,9 +45,9 @@ function onStart() {
 						<div class="explain-content">
 							<div class="row">
 								<div class="col-md-11">
-									<h2>Tentang Kami</h2>
+									<h2>{{ k.heading }}</h2>
 									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem amet voluptas accusamus, dolorum veritatis ea odio, doloremque, consequatur deleniti aut maxime quod nulla iure ut maiores consequuntur. Architecto, et, neque.
+										{{ k.description }}
 									</p>
 								</div>
 							</div>
@@ -63,7 +63,7 @@ function onStart() {
 					<div class="col-md-5">
 						<div class="explain-image">
 							<div class="bg-outter">
-								<img src="http://unsplash.it/600/600" alt="" class="img-responsive">
+								<img src="{{ k.image }}" alt="" class="img-responsive">
 							</div>
 						</div>
 					</div>
@@ -72,9 +72,9 @@ function onStart() {
 						<div class="explain-content">
 							<div class="row">
 								<div class="col-md-11 col-md-offset-1">
-									<h2>Tentang Kami</h2>
+									<h2>{{ k.heading }}</h2>
 									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem amet voluptas accusamus, dolorum veritatis ea odio, doloremque, consequatur deleniti aut maxime quod nulla iure ut maiores consequuntur. Architecto, et, neque.
+										{{ k.description }}
 									</p>
 								</div>
 							</div>
