@@ -347,3 +347,33 @@ footer {
     }
 }
 
+
+.post-project {
+	box-shadow: 0 0 10px fade(#000, 25%);
+	.mg-b-20();
+
+	.project-thumbnail {
+		position: relative;
+	}
+
+	.project-meta {
+		.meta-category {
+			position: absolute;
+			top: 10px; right: 10px;
+			background: #fff;
+			border-radius: 80px;
+			.pd-10();
+		}
+	}
+
+	.project-body {
+		.pd-10();
+
+		.project-name {
+			font-size: 18px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+}

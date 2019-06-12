@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     if(navbarTrans) {
         $(document).on('scroll', function() {
-            if(navbarTrans && window.scrollY >= 250) {
+            if(navbarTrans && window.scrollY >= 150) {
                 $('header').addClass('navbar-default').removeClass('navbar-primary');
                 navbarTrans = false;
             } else if(! navbarTrans && window.scrollY < 250) {
