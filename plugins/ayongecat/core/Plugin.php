@@ -40,7 +40,13 @@ class Plugin extends PluginBase
      */
     public function boot()
     {
-
+        \Event::listen('cms.page.beforeDisplay', function($controller, $page, $url) {
+            $controller->vars['settings'] = [
+                'page'       => \Ayongecat\Setting\Models\Page::instance(),
+                'general'    => \Ayongecat\Setting\Models\General::instance(),
+                'appearance' => \Ayongecat\Setting\Models\Appearance::instance(),
+            ];
+        });
     }
 
     /**
