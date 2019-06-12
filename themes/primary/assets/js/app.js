@@ -10,15 +10,15 @@ $(document).ready(function() {
 
     // Add your own custom script
     // ...
-    var navbarTrans = $('header').hasClass('navbar-inverse');
+    var navbarTrans = $('header').hasClass('navbar-primary');
 
     if(navbarTrans) {
         $(document).on('scroll', function() {
             if(navbarTrans && window.scrollY >= 250) {
-                $('header').addClass('navbar-default').removeClass('navbar-inverse');
+                $('header').addClass('navbar-default').removeClass('navbar-primary');
                 navbarTrans = false;
             } else if(! navbarTrans && window.scrollY < 250) {
-                $('header').addClass('navbar-inverse').removeClass('navbar-default');
+                $('header').addClass('navbar-primary').removeClass('navbar-default');
                 navbarTrans = true;
             }
         })

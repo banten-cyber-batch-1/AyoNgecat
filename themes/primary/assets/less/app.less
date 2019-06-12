@@ -41,6 +41,8 @@ h1,h2,h3,h4,h5,h6,
 }
 
 .navbar {
+	.transition(.35s all ease);
+
 	.navbar-right {
 		a {
 			.text-uppercase();
@@ -56,6 +58,12 @@ h1,h2,h3,h4,h5,h6,
 			margin-top: 15px;
 		}
 	}
+
+	.navbar-nav {
+		a {
+			font-weight: bold;
+		}
+	}
 }
 
 .navbar-primary {
@@ -64,7 +72,6 @@ h1,h2,h3,h4,h5,h6,
 	border-radius: 0px !important;
 
 	a {
-		font-weight: bold;
 		text-transform: uppercase;
 		color: @gray-base !important
 	}
@@ -334,3 +341,4 @@ footer {
     	.mg-t-10();
     }
 }
+

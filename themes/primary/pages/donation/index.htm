@@ -11,27 +11,29 @@ is_hidden = 0
 {% partial 'banner-primary' title=this.page.title %}
 <div class="container mg-t-40 mg-b-40">
 	<div class="alert alert-info text-center">
-		Kamu bisa ikut mendukung kegiatan kami dengan cara ikut berdonasi kesalah satu rekening yang terlampir dibawah ini
+		Kamu bisa ikut mendukung kegiatan kami dengan cara ikut berdonasi kesalah satu rekening yang ada dibawah
 	</div>
-	<table class="table">
-		<thead>
-			<tr>
-				<th>Nama Bank</th>
-				<th>Rekening</th>
-				<th class="text-right">Pemilik</th>
-			</tr>
-		</thead>
+	<div class="talbe-responsive">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Nama Bank</th>
+					<th>Rekening</th>
+					<th class="text-right">Pemilik</th>
+				</tr>
+			</thead>
 
-		<tbody>
-			{% for ac in accounts %}
-			<tr>
-				<td style="width: 25%">Bank {{ ac.type.short }}</td>
-				<td style="width: 25%">{{ ac.number }}</td>
-				<td style="width: 25%" class="text-right">{{ ac.name }}</td>
-			</tr>
-			{% endfor %}
-		</tbody>
-	</table>
+			<tbody>
+				{% for ac in accounts %}
+				<tr>
+					<td style="width: 40%">Bank {{ ac.type.short }}</td>
+					<td style="width: 25%">{{ ac.number }}</td>
+					<td style="width: 25%" class="text-right">{{ ac.name }}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
 	<div class="text-center">
 		<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalDonationConfirm">
 			KONFIRMASI DONASI
@@ -60,10 +62,10 @@ is_hidden = 0
 
 					<div class="form-group">
 						<label>Tujuan</label>
-						<select name="bank" id="" class="form-control">
+						<select name="bank" class="form-control">
 							<option value="">-- Pilih --</option>
 							{% for ac in accounts %}
-							<option value="">{{ ac.type.short }} &mdash; {{ ac.name }}</option>
+							<option value="{{ ac.id }}">{{ ac.type.short }} &mdash; {{ ac.name }}</option>
 							{% endfor %}
 						</select>
 					</div>
