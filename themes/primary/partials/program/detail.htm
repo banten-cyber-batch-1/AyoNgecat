@@ -1,0 +1,6 @@
+<img src="{{ program.picture ? program.picture.getThumb('1200', '650', 'crop') : 'assets/images/placeholder-default.png'|theme }}" alt="" class="img-responsive">
+<h4>{{ program.name }}</h4>
+<hr>
+<div class="text-content">
+	{{ program.content|raw }}
+</div>

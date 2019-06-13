@@ -19,6 +19,10 @@ h1,h2,h3,h4,h5,h6,
 	font-weight: bold;
 }
 
+header {
+	.transition(.35s all ease);
+}
+
 .block-banner-primary {
 	height: 400px;
 	background-repeat: no-repeat;
@@ -41,8 +45,6 @@ h1,h2,h3,h4,h5,h6,
 }
 
 .navbar {
-	.transition(.35s all ease);
-
 	.navbar-right {
 		a {
 			.text-uppercase();
@@ -338,6 +340,21 @@ footer {
 
     @media(min-width: @screen-tablet) {
     	.mg-b-20();
+    }
+
+    .program-thumbnail {
+    	position: relative;
+    	height: 200px;
+    	background-size: cover;
+    	background-repeat: no-repeat;
+    	background-position: center center;
+
+    	a {
+    		position: absolute;
+    		width: 100%; height: 100%;
+    		top: 0; left: 0;
+    		z-index: 1;
+    	}
     }
 
     .program-name {
