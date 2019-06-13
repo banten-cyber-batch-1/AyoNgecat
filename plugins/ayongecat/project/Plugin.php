@@ -50,10 +50,11 @@ class Plugin extends PluginBase
      */
     public function registerComponents()
     {
-        return []; // Remove this line to activate
+        // return []; // Remove this line to activate
 
         return [
-            'Ayongecat\Project\Components\MyComponent' => 'myComponent',
+            'Ayongecat\Project\Components\Project'       => 'Project',
+            'Ayongecat\Project\Components\ProjectDetail' => 'ProjectDetail',
         ];
     }
 

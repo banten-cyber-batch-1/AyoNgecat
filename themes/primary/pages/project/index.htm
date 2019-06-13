@@ -3,27 +3,27 @@ url       = "/project"
 layout    = "default"
 is_hidden = 0
 
+[Project]
 ==
+{% set projects = Project.getAll %}
+
 {% partial 'banner-primary' title=this.page.title %}
 <div class="container mg-t-40 mg-b-40">
 	<div class="row">
-		{% for i in 1..4 %}
+		{% for project in projects %}
 		<div class="col-md-6">
 			<div class="post post-project">
-				<div class="project-thumbnail">
-					<a href="{{ 'project/detail'|page({parameter: 'asdsa'}) }}">
-						<img src="http://unsplash.it/1200/650?random" alt="" class="img-responsive">
-					</a>
-
+				<div class="project-thumbnail" style="background-image: url('{{ project.picture ? project.picture.getThumb('1200', '650', 'crop') : 'assets/images/placeholder-default.png'|theme }}')">
+					<a href="{{ 'project/detail'|page({parameter: project.slug}) }}"></a>
 					<div class="project-meta">
 						<div class="meta-category">
-							AyoNgecat
+							{{ project.program.name }}
 						</div>
 					</div>
 				</div>
 				<div class="project-body">
 					<div class="project-name">
-						Ganteng
+						{{ project.name }}
 					</div>
 				</div>
 			</div>

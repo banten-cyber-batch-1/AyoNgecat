@@ -17,6 +17,14 @@ fields:
 
 tabs:
   fields:
+    before:
+      label: Gambar Sebelum
+      type: fileupload
+      tab: Galeri
+    after:
+      label: Gambar Sesudah
+      type: fileupload
+      tab: Galeri
     cashflow_in:
       type: repeater
       prompt: Buat baris
@@ -32,6 +40,7 @@ tabs:
             date:
                 label: Tanggal
                 type: datepicker
+                mode: date
     cashflow_out:
       type: repeater
       prompt: Buat baris
@@ -47,15 +56,7 @@ tabs:
             date:
                 label: Tanggal
                 type: datepicker
-
-    before:
-      label: Gambar Sebelum
-      type: fileupload
-      tab: Galeri
-    after:
-      label: Gambar Sesudah
-      type: fileupload
-      tab: Galeri
+                mode: date
 
 secondaryTabs:
   fields:
