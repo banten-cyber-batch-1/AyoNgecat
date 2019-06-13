@@ -10,10 +10,6 @@
 //
 // Your app styles
 //
-body {
-	padding-top: 101px;
-}
-
 h1,h2,h3,h4,h5,h6,
 .h1,.h2,.h3,.h4,.h5,.h6 {
 	font-weight: bold;
@@ -69,7 +65,7 @@ header {
 }
 
 .navbar-primary {
-	.bg-gradient-linear(@brand-gold, @brand-pink);
+	// .bg-gradient-linear(@brand-gold, @brand-pink);
 	border-color: transparent;
 	border-radius: 0px !important;
 
@@ -97,7 +93,6 @@ header {
 
 .block-hero-primary {
 	position: relative;
-	margin-top: -101px;
 	padding-top: 101px;
 	height: 100vh;
 	.bg-gradient-linear(@brand-gold, @brand-pink);
@@ -137,7 +132,7 @@ header {
 	}
 
 	&.explain-left {
-		img {
+		.outter-image {
 			@media(min-width: @screen-tablet) {
 				left: -60px;
 			}
@@ -151,7 +146,7 @@ header {
 	}
 
 	&.explain-right {
-		img {
+		.outter-image {
 			@media(min-width: @screen-tablet) {
 				right: -60px;
 			}
@@ -170,9 +165,13 @@ header {
 	.bg-gradient-linear(@brand-gold, @brand-pink);
 	border-radius: 10px;
 
-	img {
+	.outter-image {
 		position: relative;
 		border-radius: 10px;
+		height: 400px;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
 	}
 }
 
@@ -327,8 +326,8 @@ footer {
 }
 
 .block-secondary {
+	padding-top: 150px;
 	.bg-gradient-linear(@brand-gold, @brand-pink);
-	.pd-t-40();
 	.pd-b-20();
 	.text-uppercase();
 }

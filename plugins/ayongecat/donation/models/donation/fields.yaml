@@ -12,13 +12,14 @@ fields:
     donationed_at:
         label: Tanggal
         type: datepicker
+        mode: date
 
     name:
         label: Nama
     phone:
         label: Telepon
     email:
-        label: Alamat Email
+        label: Email
     value:
         label: Donasi
     message:

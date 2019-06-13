@@ -39,7 +39,7 @@ function onStart() {
 					<div class="col-md-5 col-md-push-7">
 						<div class="explain-image">
 							<div class="bg-outter">
-								<img src="{{ k.image }}" alt="" class="img-responsive">
+								<div class="outter-image" style="background-image: url({{ url('storage/app/media/') ~ k.image }})"></div>
 							</div>
 						</div>
 					</div>
@@ -66,7 +66,7 @@ function onStart() {
 					<div class="col-md-5">
 						<div class="explain-image">
 							<div class="bg-outter">
-								<img src="{{ k.image }}" alt="" class="img-responsive">
+								<div class="outter-image" style="background-image: url({{ url('storage/app/media/') ~ k.image }})"></div>
 							</div>
 						</div>
 					</div>
@@ -89,8 +89,27 @@ function onStart() {
 	{% endif %}
 {% endfor %}
 
-{% if settings.appearance.banner %}
-<div class="block block-banner-primary" style="background-image: url({{ settings.appearance.banner.getThumb('1200', '650') }})"></div>
+{% if settings.appearance.banner|length %}
+<div id="carousel-id" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+		{% for key, ban in settings.appearance.banner %}
+		<li data-target="#carousel-id" data-slide-to="{{ key }}" class="{{ key == 0 ? 'active' : '' }}"></li>
+		{% endfor %}
+	</ol>
+	<div class="carousel-inner">
+		{% for key, ban in settings.appearance.banner %}
+		<div class="item {{ key == 0 ? 'active' : '' }}">
+			<div class="block block-banner-primary" style="background-image: url({{ ban.getPath('1200', '650') }})"></div>
+		</div>
+		{% endfor %}
+	</div>
+	<a class="left carousel-control" href="#carousel-id" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left fa fa-chevron-left"></span>
+	</a>
+	<a class="right carousel-control" href="#carousel-id" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right fa fa-chevron-right"></span>
+	</a>
+</div>
 {% endif %}
 
 {% if reviews|length %}
@@ -108,7 +127,7 @@ function onStart() {
 				<div class="post post-testimonial ">
 					<div class="testimoni-head">
 						<div class="head-image">
-							<img src="{{ review.picture ? review.picture.getThumb('120', '120', 'crop') : '' }}" alt="" class="img-responsive">
+							<img src="{{ review.picture ? review.picture.getThumb('120', '120', 'crop') : 'assets/images/placeholder-avatar.png'|theme }}" alt="" class="img-responsive">
 						</div>
 					</div>
 

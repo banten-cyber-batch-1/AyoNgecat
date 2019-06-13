@@ -16,9 +16,11 @@ $(document).ready(function() {
         $(document).on('scroll', function() {
             if(navbarTrans && window.scrollY >= 150) {
                 $('header').addClass('navbar-default').removeClass('navbar-primary');
+                $('header').find('img').attr('src', logoBlack);
                 navbarTrans = false;
             } else if(! navbarTrans && window.scrollY < 250) {
                 $('header').addClass('navbar-primary').removeClass('navbar-default');
+                $('header').find('img').attr('src', logoPrimary);
                 navbarTrans = true;
             }
         })

@@ -116,7 +116,7 @@ class Plugin extends PluginBase
                     ],
 
                     'reviews' => [
-                        'label'       => 'Komentar',
+                        'label'       => 'Ulasan',
                         'url'         => Backend::url('ayongecat/core/reviews'),
                         'icon'        => 'icon-comments',
                         'permissions' => ['ayongecat.core.*'],
