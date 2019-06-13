@@ -14,26 +14,32 @@
 
 .block-hero-primary {
 	position: relative;
-	padding-top: 101px;
+	padding-top: 70px;
 	height: 100vh;
+	display: flex;
+	align-content: center;
+	align-items: center;
 	.bg-gradient-linear(@brand-gold, @brand-pink);
 
 	@media(min-width: @screen-tablet) {
+		padding-top: 101px;
+	}
+
+	.row-flex {
 		display: flex;
 		align-items: center;
 		align-content: center;
-
-		.row-flex {
-			display: flex;
-			align-items: center;
-			align-content: center;
-		}
 	}
 
 	.hero-thumbnail {
 		img {
 			margin-left: auto;
 			margin-right: auto;
+			height: 300px;
+
+			@media(min-width: @screen-tablet) {
+				height: auto;
+			}
 		}
 	}
 
