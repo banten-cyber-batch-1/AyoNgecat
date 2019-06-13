@@ -18,6 +18,6 @@ fields:
 
 secondaryTabs:
   fields:
-    attachments:
-      label: File
+    attachment:
+      label: Lampiran
       type: fileupload

@@ -50,8 +50,8 @@ class Contact extends Model
     public $morphTo       = [];
     public $morphOne      = [];
     public $morphMany     = [];
-    public $attachOne     = [];
-    public $attachMany    = [
-        'attachments' => ['System\Models\File']
+    public $attachOne     = [
+        'attachment' => ['System\Models\File']
     ];
+    public $attachMany    = [];
 }

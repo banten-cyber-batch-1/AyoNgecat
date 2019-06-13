@@ -29,7 +29,7 @@ class Contact extends ComponentBase
             'attachmentUploader',
             ['deferredBinding' => false]
         );
-        $component->bindModel('attachments', new ContactModels);
+        $component->bindModel('attachment', new ContactModels);
     }
 
     public function onContact()

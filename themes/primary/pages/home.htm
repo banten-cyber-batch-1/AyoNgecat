@@ -14,17 +14,17 @@ function onStart() {
 <div class="block block-hero-primary">
 	<div class="container">
 		<div class="row row-flex">
-			<div class="col-md-6">
+			<div class="col-md-6 col-md-push-6">
+				<div class="hero-thumbnail">
+					<img src="{{ 'assets/images/il-primary.png'|theme }}" alt="" class="img-responsive">
+				</div>
+			</div>
+			<div class="col-md-6 col-md-pull-6">
 				<div class="hero-body">
 					<h1>
 						<b>AYO NGECAT</b>
 					</h1>
 					<p class="lead">Beraktivitas Sambil Beramal</p>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="hero-thumbnail">
-					<img src="{{ 'assets/images/il-primary.png'|theme }}" alt="" class="img-responsive">
 				</div>
 			</div>
 		</div>
@@ -90,25 +90,21 @@ function onStart() {
 {% endfor %}
 
 {% if settings.appearance.banner|length %}
-<div id="carousel-id" class="carousel slide" data-ride="carousel">
-	<ol class="carousel-indicators">
-		{% for key, ban in settings.appearance.banner %}
-		<li data-target="#carousel-id" data-slide-to="{{ key }}" class="{{ key == 0 ? 'active' : '' }}"></li>
-		{% endfor %}
-	</ol>
-	<div class="carousel-inner">
-		{% for key, ban in settings.appearance.banner %}
-		<div class="item {{ key == 0 ? 'active' : '' }}">
-			<div class="block block-banner-primary" style="background-image: url({{ ban.getPath('1200', '650') }})"></div>
+<div class="mg-t-40 mg-b-40">
+	<div id="carousel-id" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			{% for key, ban in settings.appearance.banner %}
+			<li data-target="#carousel-id" data-slide-to="{{ key }}" class="{{ key == 0 ? 'active' : '' }}"></li>
+			{% endfor %}
+		</ol>
+		<div class="carousel-inner">
+			{% for key, ban in settings.appearance.banner %}
+			<div class="item {{ key == 0 ? 'active' : '' }}">
+				<div class="block block-banner-primary" style="background-image: url({{ ban.getPath('1200', '650') }})"></div>
+			</div>
+			{% endfor %}
 		</div>
-		{% endfor %}
 	</div>
-	<a class="left carousel-control" href="#carousel-id" data-slide="prev">
-		<span class="glyphicon glyphicon-chevron-left fa fa-chevron-left"></span>
-	</a>
-	<a class="right carousel-control" href="#carousel-id" data-slide="next">
-		<span class="glyphicon glyphicon-chevron-right fa fa-chevron-right"></span>
-	</a>
 </div>
 {% endif %}
 
