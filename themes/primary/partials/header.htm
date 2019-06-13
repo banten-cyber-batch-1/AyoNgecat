@@ -32,7 +32,7 @@ code = "main-menu"
 <div class="navmenu navmenu-inverse navmenu-fixed-right offcanvas" id="primaryMenu">
     <ul class="nav navmenu-nav">
         {% for item in mainMenu.menuItems %}
-        <li><a href="{{ item.url }}">{{ item.title|upper }}</a></li>
+        <li class="{{ item.isActive ? 'active' : '' }}"><a href="{{ item.url }}">{{ item.title|upper }}</a></li>
         {% endfor %}
     </ul>
 </div>
