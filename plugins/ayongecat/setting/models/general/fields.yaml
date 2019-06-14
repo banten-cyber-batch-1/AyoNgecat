@@ -16,7 +16,7 @@ tabs:
       label: Alamat Email
       tab: Kontak
     contact_phone:
-      label: Nomor Telepon
+      label: Whatsapp
       tab: Kontak
 
     social_facebook:
